@@ -166,38 +166,34 @@
             display: flex;
             justify-content: space-between;
             align-items: center;
+            gap: 20px;
         }
 
-        .team-info {
+        .teams-container {
             flex: 1;
-        }
-
-        .team {
             display: flex;
-            justify-content: space-between;
-            align-items: center;
-            padding: 8px 0;
-            font-size: 16px;
+            flex-direction: column;
+            gap: 8px;
         }
 
         .team-name-text {
             font-weight: 600;
             color: #333;
+            font-size: 16px;
         }
 
-        .team.oghs .team-name-text {
+        .team-name-text.oghs {
             color: #1a237e;
             font-weight: 700;
             font-size: 17px;
         }
 
         .score-display {
-            font-size: 32px;
+            font-size: 36px;
             font-weight: bold;
             color: #1a237e;
-            margin: 0 25px;
-            min-width: 60px;
-            text-align: center;
+            margin: 0 20px;
+            white-space: nowrap;
         }
 
         .score-display.win {
@@ -305,16 +301,11 @@
                     <div class="match-stage">Pool Play</div>
                 </div>
                 <div class="match-result">
-                    <div class="team-info">
-                        <div class="team oghs">
-                            <span class="team-name-text">OGHS Y9A</span>
-                            <span style="font-weight: 700; color: #1a237e; font-size: 20px;">2</span>
-                        </div>
-                        <div class="team">
-                            <span class="team-name-text">Geraldine High School</span>
-                            <span style="font-weight: 600; font-size: 18px;">1</span>
-                        </div>
+                    <div class="teams-container">
+                        <span class="team-name-text oghs">OGHS Y9A</span>
+                        <span class="team-name-text">Geraldine High School</span>
                     </div>
+                    <div class="score-display win">2 v 1</div>
                     <div class="result-badge">WIN</div>
                 </div>
             </div>
@@ -325,16 +316,11 @@
                     <div class="match-stage">Pool Play</div>
                 </div>
                 <div class="match-result">
-                    <div class="team-info">
-                        <div class="team oghs">
-                            <span class="team-name-text">OGHS Y9A</span>
-                            <span style="font-weight: 700; color: #1a237e; font-size: 20px;">2</span>
-                        </div>
-                        <div class="team">
-                            <span class="team-name-text">James Hargest</span>
-                            <span style="font-weight: 600; font-size: 18px;">0</span>
-                        </div>
+                    <div class="teams-container">
+                        <span class="team-name-text oghs">OGHS Y9A</span>
+                        <span class="team-name-text">James Hargest</span>
                     </div>
+                    <div class="score-display win">2 v 0</div>
                     <div class="result-badge">WIN</div>
                 </div>
             </div>
@@ -345,16 +331,11 @@
                     <div class="match-stage">Pool Play</div>
                 </div>
                 <div class="match-result">
-                    <div class="team-info">
-                        <div class="team oghs">
-                            <span class="team-name-text">OGHS Y9A</span>
-                            <span style="font-weight: 700; color: #1a237e; font-size: 20px;">2</span>
-                        </div>
-                        <div class="team">
-                            <span class="team-name-text">Verdon Junior A</span>
-                            <span style="font-weight: 600; font-size: 18px;">0</span>
-                        </div>
+                    <div class="teams-container">
+                        <span class="team-name-text oghs">OGHS Y9A</span>
+                        <span class="team-name-text">Verdon Junior A</span>
                     </div>
+                    <div class="score-display win">2 v 0</div>
                     <div class="result-badge">WIN</div>
                 </div>
             </div>
@@ -365,16 +346,11 @@
                     <div class="match-stage">Pool Play</div>
                 </div>
                 <div class="match-result">
-                    <div class="team-info">
-                        <div class="team">
-                            <span class="team-name-text">Columba College 9A</span>
-                            <span style="font-weight: 600; font-size: 18px;">2</span>
-                        </div>
-                        <div class="team oghs">
-                            <span class="team-name-text">OGHS Y9A</span>
-                            <span style="font-weight: 700; color: #1a237e; font-size: 20px;">0</span>
-                        </div>
+                    <div class="teams-container">
+                        <span class="team-name-text oghs">OGHS Y9A</span>
+                        <span class="team-name-text">Columba College 9A</span>
                     </div>
+                    <div class="score-display loss">0 v 2</div>
                     <div class="result-badge loss">LOSS</div>
                 </div>
             </div>
@@ -385,16 +361,11 @@
                     <div class="match-stage">Pool Play</div>
                 </div>
                 <div class="match-result">
-                    <div class="team-info">
-                        <div class="team oghs">
-                            <span class="team-name-text">OGHS Y9A</span>
-                            <span style="font-weight: 700; color: #1a237e; font-size: 20px;">2</span>
-                        </div>
-                        <div class="team">
-                            <span class="team-name-text">CSC B</span>
-                            <span style="font-weight: 600; font-size: 18px;">0</span>
-                        </div>
+                    <div class="teams-container">
+                        <span class="team-name-text oghs">OGHS Y9A</span>
+                        <span class="team-name-text">CSC B</span>
                     </div>
+                    <div class="score-display win">2 v 0</div>
                     <div class="result-badge">WIN</div>
                 </div>
             </div>
@@ -411,16 +382,11 @@
                     <div class="match-stage">Quarter Final</div>
                 </div>
                 <div class="match-result">
-                    <div class="team-info">
-                        <div class="team oghs">
-                            <span class="team-name-text">OGHS Y9A</span>
-                            <span style="font-weight: 700; color: #1a237e; font-size: 20px;">1</span>
-                        </div>
-                        <div class="team">
-                            <span class="team-name-text">Wakatipu B</span>
-                            <span style="font-weight: 600; font-size: 18px;">2</span>
-                        </div>
+                    <div class="teams-container">
+                        <span class="team-name-text oghs">OGHS Y9A</span>
+                        <span class="team-name-text">Wakatipu B</span>
                     </div>
+                    <div class="score-display loss">1 v 2</div>
                     <div class="result-badge loss">LOSS</div>
                 </div>
             </div>
@@ -431,16 +397,11 @@
                     <div class="match-stage">Semi Final</div>
                 </div>
                 <div class="match-result">
-                    <div class="team-info">
-                        <div class="team oghs">
-                            <span class="team-name-text">OGHS Y9A</span>
-                            <span style="font-weight: 700; color: #1a237e; font-size: 20px;">2</span>
-                        </div>
-                        <div class="team">
-                            <span class="team-name-text">Geraldine High School</span>
-                            <span style="font-weight: 600; font-size: 18px;">0</span>
-                        </div>
+                    <div class="teams-container">
+                        <span class="team-name-text oghs">OGHS Y9A</span>
+                        <span class="team-name-text">Geraldine High School</span>
                     </div>
+                    <div class="score-display win">2 v 0</div>
                     <div class="result-badge">WIN</div>
                 </div>
             </div>
@@ -451,16 +412,11 @@
                     <div class="match-stage">5th Place Final</div>
                 </div>
                 <div class="match-result">
-                    <div class="team-info">
-                        <div class="team oghs">
-                            <span class="team-name-text">OGHS Y9A</span>
-                            <span style="font-weight: 700; color: #1a237e; font-size: 20px;">2</span>
-                        </div>
-                        <div class="team">
-                            <span class="team-name-text">James Hargest</span>
-                            <span style="font-weight: 600; font-size: 18px;">0</span>
-                        </div>
+                    <div class="teams-container">
+                        <span class="team-name-text oghs">OGHS Y9A</span>
+                        <span class="team-name-text">James Hargest</span>
                     </div>
+                    <div class="score-display win">2 v 0</div>
                     <div class="result-badge">WIN</div>
                 </div>
             </div>
