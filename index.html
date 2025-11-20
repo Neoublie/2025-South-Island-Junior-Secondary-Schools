@@ -13,7 +13,7 @@
 
         body {
             font-family: 'Arial', 'Helvetica', sans-serif;
-            background: linear-gradient(135deg, #4a148c 0%, #7b1fa2 100%);
+            background: linear-gradient(135deg, #2c2c2c 0%, #3a3a3a 100%);
             padding: 40px 20px;
         }
 
@@ -272,6 +272,177 @@
 
         .footer p {
             margin: 5px 0;
+        }
+
+        /* Mobile Responsive Styles */
+        @media (max-width: 768px) {
+            body {
+                padding: 20px 10px;
+            }
+
+            .header {
+                padding: 30px 20px;
+            }
+
+            .school-name {
+                font-size: 32px;
+                letter-spacing: 2px;
+            }
+
+            .team-name {
+                font-size: 20px;
+            }
+
+            .tournament-info {
+                font-size: 14px;
+            }
+
+            .final-position {
+                padding: 20px 15px;
+            }
+
+            .final-position h2 {
+                font-size: 18px;
+            }
+
+            .final-position .position {
+                font-size: 48px;
+            }
+
+            .final-position p {
+                font-size: 14px !important;
+            }
+
+            .content {
+                padding: 20px 15px;
+            }
+
+            .section-title {
+                font-size: 16px;
+                padding: 12px 15px;
+                margin: 20px 0 15px 0;
+            }
+
+            .match-card {
+                padding: 15px;
+                margin-bottom: 12px;
+            }
+
+            .match-header {
+                flex-direction: column;
+                align-items: flex-start;
+                gap: 8px;
+                margin-bottom: 12px;
+            }
+
+            .match-date {
+                font-size: 11px;
+            }
+
+            .match-stage {
+                font-size: 10px;
+                padding: 4px 12px;
+            }
+
+            .match-result {
+                flex-direction: column;
+                gap: 12px;
+                align-items: stretch;
+            }
+
+            .teams-container {
+                gap: 6px;
+            }
+
+            .team-name-text {
+                font-size: 14px;
+            }
+
+            .team-name-text.oghs {
+                font-size: 15px;
+            }
+
+            .score-display {
+                font-size: 28px;
+                margin: 0;
+                text-align: center;
+                padding: 10px 0;
+            }
+
+            .result-badge {
+                padding: 10px 16px;
+                font-size: 13px;
+                text-align: center;
+            }
+
+            .tournament-summary {
+                padding: 20px 15px;
+            }
+
+            .tournament-summary h3 {
+                font-size: 18px;
+                margin-bottom: 15px;
+            }
+
+            .stats-grid {
+                grid-template-columns: 1fr;
+                gap: 12px;
+            }
+
+            .stat-box {
+                padding: 15px;
+            }
+
+            .stat-value {
+                font-size: 32px;
+            }
+
+            .stat-label {
+                font-size: 12px;
+            }
+
+            .footer {
+                padding: 20px 15px;
+                font-size: 12px;
+            }
+
+            .footer p:first-child {
+                font-size: 16px !important;
+            }
+        }
+
+        @media (max-width: 480px) {
+            .school-name {
+                font-size: 24px;
+                letter-spacing: 1px;
+            }
+
+            .team-name {
+                font-size: 16px;
+            }
+
+            .tournament-info {
+                font-size: 12px;
+            }
+
+            .final-position .position {
+                font-size: 36px;
+            }
+
+            .score-display {
+                font-size: 24px;
+            }
+
+            .tournament-summary > div:last-child {
+                font-size: 14px !important;
+            }
+        }
+
+        @media (min-width: 481px) and (max-width: 768px) {
+            .stats-grid {
+                grid-template-columns: repeat(3, 1fr);
+                gap: 15px;
+            }
         }
     </style>
 </head>
